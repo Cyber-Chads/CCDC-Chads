@@ -20,7 +20,7 @@
 # --------------------------- #
 
 # Declare variables
-BASHSTR="!WARNING! Unauthorized access is prohibited and punishable by litigation."
+BASHSTR="LEGAL DISCLAIMER: This computer system is the property of TEAM9 LLC. By using this system, all users acknowledge notice of, and agree to comply with, the Acceptable User of Information Technology Resources Polity (AUP). By using this system, you consent to these terms and conditions. Use is also consent to monitoring, logging, and use of logging to prosecute abuse. If you do not wish to comply with these terms and conditions, you must LOG OFF IMMEDIATELY"
 
 # Stop SSH Service (does not include killing attached processes)
 service sshd stop
