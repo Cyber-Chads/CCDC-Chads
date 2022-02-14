@@ -1,2 +1,2 @@
 # CCDC-Chads
-CCDC Cool Stuffs
+Cyber chads, Cyber chads, do whatever those Cyber chads do.
