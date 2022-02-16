@@ -79,7 +79,7 @@ cat fed1.rpm fed2.rpm > fed.rpm
 rpm -i fed.rpm
 /opt/splunkforwarder/bin/splunk start --accept-license
 /opt/splunkforwarder/bin/splunk enable boot-start
-/opt/splunkforwarder/bin/splunk add forward-server 172.20.241.18:9997
+/opt/splunkforwarder/bin/splunk add forward-server 172.20.241.20:9997
 /opt/splunkforwarder/bin/splunk add monitor /var/log
 /opt/splunkforwarder/bin/splunk restart
 
