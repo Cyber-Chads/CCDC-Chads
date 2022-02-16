@@ -73,10 +73,16 @@ ip6tables -P OUTPUT DROP
 ip6tables -P FORWARD DROP
 
 # Splunk Setup 
-curl -LJO https://raw.githubusercontent.com/ChaosRobot/t/main/ffile
-chmod 777 ffile
-./ffile
-rm ffile
+curl -L https://github.com/Cyber-Chads/CCDC-Chads/raw/main/xaa > fed1.rpm
+curl -L https://github.com/Cyber-Chads/CCDC-Chads/raw/main/xab > fed2.rpm
+cat fed1.rpm fed2.rpm > fed.rpm
+rpm -i fed.rpm
+/opt/splunkforwarder/bin/splunk start --accept-license
+/opt/splunkforwarder/bin/splunk enable boot-start
+/opt/splunkforwarder/bin/splunk add forward-server 172.20.241.18:9997
+/opt/splunkforwarder/bin/splunk add monitor /var/log
+/opt/splunkforwarder/bin/splunk restart
+
 service splunk status
 
 # Configure Banners
